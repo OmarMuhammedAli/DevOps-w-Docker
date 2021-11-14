@@ -1,0 +1,1 @@
+CMD: docker container run -it --name runner1 ubuntu sh -c "echo 'Input website'; read website; echo 'Searching...'; sleep 1; apt-get update; apt-get install curl; curl http://$website;"
