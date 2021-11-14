@@ -1,0 +1,5 @@
+C:\Users\Omar>docker container run -it --name runner ubuntu
+root@bc4d77c9abd0:/# apt-get update; apt-get install curl
+root@bc4d77c9abd0:/# exit
+C:\Users\Omar>docker start runner
+C:\Users\Omar>docker exec -it runner sh -c "echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website;"
