@@ -1,0 +1,2 @@
+To run the container: docker run -it curler
+To build the image: docker build . -t curler
