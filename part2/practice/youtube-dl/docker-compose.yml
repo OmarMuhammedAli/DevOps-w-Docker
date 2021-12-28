@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+    youtube-dl-ubuntu:
+      image: h0riz0n/youtube-dl:3.0.0
+      build: .
